@@ -1,0 +1,128 @@
+* {background-color: black}
+.wd-border-color {
+rgb(47, 51, 54);
+}
+
+.wd-padded-all-round-16 {
+    padding: 16px;
+}
+
+.wd-border-offset{
+    border-left: 16px;
+}
+
+.wd-bookmark-title{
+    color: white;
+    font-size: 20px;
+}
+
+.wd-handle {
+    color:lightgray;
+    font-size: 13px;
+}
+
+.wd-border-solid {
+    border-style: solid;
+    color: lightgray;
+    border-bottom: 12px;
+    border-width: 1px;
+
+}
+
+.wd-flex-container {
+    border-width: 2px;
+    border-color: black;
+    border-style: none;
+    display: flex;
+}
+
+.flex-box {
+    margin: 0px;
+    border-style: none;
+    padding: 4px;
+}
+
+.wd-circular-image {
+    border-radius: 45px;
+    height: 45px;
+    width: 45px;
+}
+
+.wd-name {
+    font-size: 15px;
+    color: white;
+
+}
+.wd-author-handle {
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-main-content {
+    font-size: 15px;
+    color: white;
+    width: 506px;
+
+}
+
+.wd-image{
+    border-radius: 40px 40px 0 0;
+    height: 264px;
+    width: 504px;
+    padding-right: 12px;
+    margin-left: 50px;
+}
+
+.wd-title{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.wd-text {
+    font-size: 15px;
+    color: lightgray;
+    width: 506px;
+    padding-right: 12px;
+    margin-left: 50px;
+}
+
+.wd-copy-link {
+    color: darkgray;
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.wd-border-thin {
+    border-style: groove;
+    color: lightgray;
+    border-bottom: 12px;
+    border-width: 1px;
+
+}
+
+.wd-icons {
+    color: lightgray;
+    padding-left: 16px;
+    margin-left: 12px;
+}
+
+
+.wd-icon-heart {
+    color: red;
+}
+
+.wd-numbers {
+    color: lightgray;
+    font-size: 15px;
+    padding-left: 12px;
+
+}
+
+.wd-heart-numbers {
+    color: red;
+    font-size: 15px;
+    padding-left: 12px;
+}
