@@ -2,7 +2,10 @@
 .wd-border-color {
 rgb(47, 51, 54);
 }
-
+.wd-elipse{
+    color: blue;
+    float: right;
+}
 .wd-padded-all-round-16 {
     padding-left: 16px;
 }
@@ -15,11 +18,13 @@ rgb(47, 51, 54);
 .wd-bookmark-title{
     color: white;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .wd-handle {
     color:lightgray;
     font-size: 13px;
+    margin-top: 12px;
 }
 
 .wd-border-solid {
@@ -67,14 +72,13 @@ rgb(47, 51, 54);
 }
 
 .wd-image{
-    border-radius: 40px 40px 0 0;
+    border-radius: 30px 30px 0 0;
     height: 264px;
     width: 564px;
-    padding-right: 12px;
     margin-left: 50px;
     border: 1px solid lightgray;
+    border-bottom: 25px;
 }
-
 .wd-title{
     font-size: 15px;
     color: white;
@@ -107,7 +111,7 @@ rgb(47, 51, 54);
 
 .wd-icons {
     color: lightgray;
-    padding-left: 16px;
+    padding-left: 22px;
     margin-left: 12px;
     position: absolute;
     width: 504px;
