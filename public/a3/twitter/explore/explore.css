@@ -17,9 +17,9 @@
 .wd-magnifying-glass {
     position: absolute;
     left: 35px;
-    margin-top:8px;
-    color: white;
+    margin-top:6px;
     background-color: darkgray;
+    color: grey;
 }
 
 {
@@ -65,8 +65,10 @@ rgb(47, 51, 54);
 
 .wd-border {
     border-color: rgb(47, 51, 54);
-    border-width: 5px;
-    border-style: groove;
+    border-style: solid;
+    border-bottom: 12px;
+    border-width: 1px;
+    color: lightgray;
 }
 .wd-trending-tweets {
     padding-left:16px;
@@ -85,10 +87,16 @@ rgb(47, 51, 54);
     color:white;
     padding-left:4px;
 }
+
+.wd-covid-post{
+    padding-left:4px;
+    font-size: 13px;
+    color:rgb(110, 118, 125);
+}
 .wd-float-right{
     border-radius: 25px;
     float: right;
-    height: 90px;
+    height: 100px;
     width: 100px;
     border-right: 16px;
 
