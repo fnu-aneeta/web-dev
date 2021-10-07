@@ -1,0 +1,44 @@
+body {
+    margin: 10px;
+    line-height:0.6;
+}
+
+.spacing {
+    line-height:1rem;
+}
+
+.lr {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    text-decoration-style: solid;
+    position: absolute;
+    bottom: 135px;
+    left: 7px;
+    color: white;
+
+}
+
+
+.mx-auto {
+    min-width: 100%;
+}
+
+.cog-color {
+    color: blue;
+}
+
+.magnifying-glass {
+    position: absolute;
+    padding-left: 12px;
+    margin-top:13px;
+}
+
+.position-search {
+    padding-left: 36px;
+}
+
+.caption {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 12px;
+}
