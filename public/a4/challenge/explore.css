@@ -6,7 +6,15 @@ body {
 }
 
 .spacing {
-    line-height:1.4rem;
+    line-height:1.5rem;
+}
+
+.border-remove {
+    background-color: black;
+    border-left: 1px solid #282828;
+    border-right: 1px solid #282828;
+    border-top: 1px solid #282828;
+    border-bottom: 1px solid #282828;
 }
 
 .lr {
@@ -35,7 +43,6 @@ body {
 }
 
 .card-color{
-    border-style: groove;
     color: lightgrey;
 }
 
@@ -76,15 +83,16 @@ body {
 .magnifying-glass {
     position: absolute;
     padding-left: 12px;
-    margin-top:13px;
-    color: lightgrey;
-
+    margin-top:11px;
+    color: dimgray;
 }
+
 
 .position-search {
     padding-left: 36px;
-    background-color: darkgray;
-    color: white;
+    background-color: #222;
+    color: dimgray;
+    border: none;
 }
 
 .caption {
