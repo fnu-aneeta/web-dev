@@ -11,12 +11,26 @@ body {
 
 .border-remove {
     background-color: black;
-    border-left: 1px solid #282828;
-    border-right: 1px solid #282828;
-    border-top: 1px solid #282828;
-    border-bottom: 1px solid #282828;
+    border-left: 0px solid #282828;
+    border-right: 0px solid #282828;
+    border-top: 0px solid #282828;
+    border-bottom: 0px solid #282828;
 }
 
+.border-left {
+
+    border-left: 1px solid #282828;
+}
+
+.border-right{
+
+    border-right: 1px solid #282828;
+}
+
+.border-bottom{
+
+    border-bottom: 1px solid #282828;
+}
 .lr {
     font-family: 'Roboto', sans-serif;
     font-size: 35px;
