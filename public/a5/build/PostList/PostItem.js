@@ -14,14 +14,14 @@ const PostItem = (posts) => {
      <div class = "card border-left border-right wd-card-rounded-border">
                     <img src = ${posts.linkImage}
                          class="card-img-top wd-card-image-border">
-         <div class = "card-body">
+                        
+         <div class = "card-body ${posts.linkBody ? '' : 'd-none'}">
              <div class = "card-title">
                          <h6 class = "text-detail-color">${posts.linkTitle}</h6>
                          <h7 class = "fw-normal">${posts.linkBody}</h7>
                          <i class="fas fa-link">&nbsp;${posts.linkText}</i>
          
              </div>
-
          </div>
      </div>
        
