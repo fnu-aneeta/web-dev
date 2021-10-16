@@ -1,5 +1,5 @@
 import PostSummaryList from "../PostSummaryList/PostSummaryList.js";
-const ExploreComponent = () => {
+const ExploreComponent = (active) => {
     return(`
 <div>
             <div class="row mb-2">
@@ -15,27 +15,27 @@ const ExploreComponent = () => {
 
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a class="nav-link text-color active" href="#">
+                    <a class="nav-link text-color ${active === 'for you' ? 'active' : ''}" href="#" data-toggle="tab">
                         <span class="d-lg-block d-md-4 d-xl-4 col-xxl-4">For you</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-color" href="#">
+                    <a class="nav-link text-color ${active === 'trending' ? 'active' : ''}" href="#">
                         <span class="d-lg-block d-md-4 d-xl-4 col-xxl-4">Trending</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-color" href="#">
+                    <a class="nav-link text-color ${active === 'more' ? 'active' : ''}" href="#">
                         <span class="d-lg-block d-md-4 d-xl-4 col-xxl-4">News</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-color" href="#">
+                    <a class="nav-link text-color ${active === 'sports' ? 'active' : ''}" href="#">
                         <span class="d-lg-block d-md-4 d-xl-4 col-xxl-4">Sports</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-color" href="#">
+                    <a class="nav-link text-color ${active === 'entertainment' ? 'active' : ''}" href="#">
                         <span class="d-sm-none d-md-block">Entertainment</span>
                     </a>
                 </li>
