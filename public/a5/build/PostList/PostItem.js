@@ -1,17 +1,20 @@
 const PostItem = (posts) => {
     return(`
-<div>
-<div class="wd-flex-container">
-    <img src=${posts.avatarIcon} class="wd-circular-image flex-box">
-    <div class="flex-box">
+
+<div class="row">
+     <div class="col-1 col-sm-1">
+    <img src=${posts.avatarIcon} class="wd-circular-image">
+    </div>
+     <div class="col-11 col-sm-11 wd-margin">
        <div class="wd-name fw-bold">${posts.userName}
        <i class="fas fa-check-circle text-detail-color">&nbsp;</i>
-        <span class="wd-author-handle fw-normal">${posts.handle} &middot; ${posts.time} </span>
+        <span class="wd-author-handle fw-normal">${posts.handle} &middot; ${posts.time} 
+         <i class="fa fa-ellipsis-h float-end"></i></span>
        </div>
         <p class="wd-main-content">${posts.body}</p>
     </div>
 </div>
-     <div class = "card border-left border-right wd-card-rounded-border">
+     <div class = "card border-left border-right wd-card-rounded-border wd-color-card-body">
                     <img src = ${posts.linkImage}
                          class="card-img-top wd-card-image-border">
                         
@@ -19,7 +22,7 @@ const PostItem = (posts) => {
              <div class = "card-title">
                          <h6 class = "text-detail-color">${posts.linkTitle}</h6>
                          <h7 class = "fw-normal">${posts.linkBody}</h7>
-                         <i class="fas fa-link">&nbsp;${posts.linkText}</i>
+                         <i class="fas fa-link" style="width: 33rem;">&nbsp;${posts.linkText}</i>
          
              </div>
          </div>
@@ -45,7 +48,6 @@ const PostItem = (posts) => {
                 <span class="wd-numbers"></span></div>
                  
         </div>
-      </div>
     <br/>    
     <br/>    
       <hr> 
