@@ -1,11 +1,10 @@
 const PostItem = (posts) => {
     return(`
-
-<div class="row">
-     <div class="col-1 col-sm-1">
-    <img src=${posts.avatarIcon} class="wd-circular-image">
+<div class="row mt-1">
+     <div class="col-1">
+    <img src=${posts.avatarIcon} class="rounded-circle img-fluid" width="55px"/>
     </div>
-     <div class="col-11 col-sm-11 wd-margin">
+     <div class="col-11">
        <div class="wd-name fw-bold">${posts.userName}
        <i class="fas fa-check-circle text-detail-color">&nbsp;</i>
         <span class="wd-author-handle fw-normal">${posts.handle} &middot; ${posts.time} 
