@@ -5,7 +5,7 @@ export default [
         handle: '@elonmusk',
         time: '23h',
         body: 'Amazing show about <a class="wd-text-link-inspiration4x" href="https://twitter.com/inspiration4x">@Inspiration4x</a> mission!',
-        linkImage: 'https://pbs.twimg.com/card_img/1446647628930838528/BsMV4oVF?format=jpg&name=900x900',
+        linkImage: 'https://i.ytimg.com/vi/_nwSmOEiDls/maxresdefault.jpg',
         linkTitle: 'Countdown: Inspiration4 Mission to Space | Netflix Official Site',
         linkBody: 'From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space...',
         linkText: '<a class="wd-text-link fw-normal" href="https://www.netflix.com/title/81441273">netflix.com</a>',
