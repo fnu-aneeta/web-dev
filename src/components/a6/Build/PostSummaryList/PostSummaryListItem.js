@@ -23,7 +23,7 @@ const PostSummaryListItem = (
 
                                    <span className="fw-bold text-detail-color">{post.userName}</span>
 
-                                    <span className = "fa-stack" style={{"fontSize": "0.9em"}}>
+                                    <span className = "fa-stack" style={{"fontSize": "0.8em"}}>
                                         <i className = "fas fa-check-circle fa-stack-1x fa-inverse">&nbsp;</i>
                                     </span>
                                     <h7 className = "text-color">{post.time}</h7>
