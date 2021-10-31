@@ -27,8 +27,14 @@ body {
 }
 
 .wd-card-rounded-border{
-    border-radius: 30px;
-    border: 1px dimgray solid;
+    border-radius: 15px;
+
+}
+
+.wd-border-top {
+
+    border-top: 1px solid #282828;
+    border-bottom: 1px solid #282828 ;
 }
 
 .wd-ellipsis-position{
@@ -37,13 +43,12 @@ body {
 }
 
 .wd-card-image-border{
-border-radius: 30px 30px 0 0;
-    border: 1px solid dimgray;
+border-radius: 15px 15px 15px 15px;
 }
 
 .wd-card-image-grimmy{
-
-    border: 1px solid dimgray;
+    border-radius: 15px;
+    border: 1px solid #282828 ;
 }
 
 .wd-card-image-Inspiration4x{
@@ -128,6 +133,11 @@ border-radius: 30px 30px 0 0;
 
 .text-detail-color {
     color:white;
+
+}
+
+.wd-text-body-font {
+    font-size: 15px;
 }
 
 .magnifying-glass {
