@@ -13,7 +13,7 @@ function App() {
   return (
        <BrowserRouter>
         <div className="container">
-          {/*<HomeScreen/>*/}
+
           <Route path="/a6/hello" exact={true}>
             <HelloWorld/>
           </Route>
