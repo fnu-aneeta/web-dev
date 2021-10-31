@@ -14,11 +14,11 @@ const WhoToFollowListItem = (
                 <li className="list-group-item">
                     <div className="row">
                         <div className="col-2">
-                            <img src={who.avatarIcon} width="43" className="rounded-circle float-start"/>
+                            <img src={who.avatarIcon} width="42" className="rounded-circle float-start"/>
                         </div>
                         <div className="col-6">
                           <div className="fw-bold text-nowrap">{who.userName}
-                            <span className = "fa-stack" style={{"fontSize": "0.9em"}}>
+                            <span className = "fa-stack" style={{"fontSize": "0.7em"}}>
                               <i className="fas fa-check-circle fa-stack-1x fa-inverse">&nbsp;</i>
                             </span>
                           </div>
