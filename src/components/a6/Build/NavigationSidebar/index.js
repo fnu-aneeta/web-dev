@@ -8,7 +8,7 @@ const NavigationSidebar = (
 {
     const isActive = (active, path) => `list-group-item ${active === path? 'active' : ''}`
     return(
-    <>
+
         <div>
             <div className="list-group">
                 <a className="list-group-item" href="#">
@@ -55,9 +55,14 @@ const NavigationSidebar = (
                     <span className="d-none d-xl-inline-block">More</span>
                 </a>
             </div>
-            <button className="btn btn-primary mt-2 rounded-pill mx-auto-new">Tweet</button>
+            <div className = "d-grid mt-2">
+                <a href = "tweet.html"
+                   className="btn btn-primary btn-block rounded-pill">
+                    Tweet
+                </a>
+            </div>
         </div>
-    </>
+
     );
 }
 export default NavigationSidebar;
