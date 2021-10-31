@@ -1,5 +1,6 @@
 import React from "react";
 import '../HomeScreen/home.css';
+import '../ExploreScreen/explore.css'
 
 const PostItem = (
     {
@@ -25,12 +26,12 @@ const PostItem = (
         <div>
 
         <div className="row mt-1">
-            <div className="col-1 d-md-inline-block d-lg-inline-block d-xl-inline-block">
+            <div className="col-1 d-grid">
                 <img src={posts.avatarIcon} alt = "Avatar" width="32" className="rounded-circle float-start"/>&nbsp;
             </div>
-            <div className="col-11 d-md-inline-block d-lg-inline-block d-xl-inline-block">
+            <div className="col-11">
                 <div className="wd-name fw-bold">{posts.userName}&nbsp;
-                    <i className="fas fa-check-circle text-detail-color">&nbsp;</i>
+                    <i className="fas fa-check-circle text-detail-color" style={{"fontSize": "0.9em"}}>&nbsp;</i>
                     <span className="wd-author-handle fw-normal">&nbsp;{posts.handle} &middot; &nbsp;{posts.time}
                         <i className="fa fa-ellipsis-h float-end"></i>
                </span>
@@ -42,20 +43,17 @@ const PostItem = (
 
 
 
-        <div className = "card border-left border-right wd-card-rounded-border wd-color-card-body">
+        <div className = "card border-left border-right wd-card-rounded-border wd-color-card-body wd-border-top">
             <img src = {posts.linkImage}
-                 className="card-img-top wd-card-image-border" style={{"border-style":"1px solid dimgray;"}}/>
+                 className="card-img-top wd-card-image-border wd-card-image-grimmy"/>
 
             <div className = {`card-body ${posts.linkBody ? '' : 'd-none'}`}>
                 <div className = "card-title">
                     <h6 className = "text-detail-color">{posts.linkTitle}</h6>
-                    <h7 className = "fw-normal">{posts.linkBody}</h7>
-                    <p>
-                    <i className="fas fa-link" style={{"width": "33rem;"}}>&nbsp;
-
-                        <a className="wd-text-link fw-normal" href="https://www.netflix.com/title/81441273">{posts.linkText}</a>
-                    </i>
-                    </p>
+                    <h7 className = "fw-normal wd-text-body-font">{posts.linkBody}</h7>
+                      <br/>
+                    <i className="fas fa-link wd-text-body-font">&nbsp;</i>
+                    <a className="wd-text-link fw-normal wd-text-body-font" href="https://www.netflix.com/title/81441273">{posts.linkText}</a>
 
                 </div>
             </div>
