@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import React from "react";
 import '../ExploreScreen/explore.css';
 const NavigationSidebar = (
@@ -11,49 +12,50 @@ const NavigationSidebar = (
 
         <div>
             <div className="list-group">
-                <a className="list-group-item" href="#">
+                <Link className="list-group-item" to="/a6/">
+
                     <i className="fab fa-twitter"></i>
-                </a>       
-                <a className = {isActive(active, 'home')}
-                 href = "../HomeScreen/home.html">
+                </Link>
+                <Link className = {isActive(active, 'home')}
+                 to = "/a6/twitter/home">
                     <i className="fa fa-home"></i>&nbsp;
                     <span className="d-none d-xl-inline-block">Home</span>
-                </a>
-                <a className={isActive(active, 'explore')}
-                href="../ExploreScreen/explore.html">
+                </Link>
+                <Link className={isActive(active, 'explore')}
+                to="/a6/twitter/explore">
                     <i className="fas fa-hashtag"></i>&nbsp;
                     <span className="d-none d-xl-inline-block">Explore</span>
-                </a>
-                <a className={isActive(active, 'notifications')}
-                 href="notifications.html">
+                </Link>
+                <Link className={isActive(active, 'notifications')}
+                 to="notifications.html">
                     <i className="fas fa-bell"></i>&nbsp;
                     <span className="d-none d-xl-inline-block">Notifications</span>
-                </a>
-                <a className={isActive(active, 'messages')}
-                href="messages.html">
+                </Link>
+                <Link className={isActive(active, 'messages')}
+                to="messages.html">
                     <i className="fas fa-envelope"></i>&nbsp;
                     <span className="d-none d-xl-inline-block">Messages</span>
-                </a>
-                <a className={isActive(active, 'bookmarks')}
-                href="bookmarks.html">
+                </Link>
+                <Link className={isActive(active, 'bookmarks')}
+                to="bookmarks.html">
                     <i className="fas fa-bookmark"></i>&nbsp;
                     <span className="d-none d-xl-inline-block">Bookmarks</span>
-                </a>
-                <a className={isActive(active, 'lists')}
-                href="lists.html">
+                </Link>
+                <Link className={isActive(active, 'lists')}
+                to="lists.html">
                     <i className="fas fa-list"></i>&nbsp;
                     <span className="d-none d-xl-inline-block">Lists</span>
-                </a>
-                <a className={isActive(active, 'profile')}
-                href="profile.html">
+                </Link>
+                <Link className={isActive(active, 'profile')}
+                to="profile.html">
                     <i className="fas fa-user-alt"></i>&nbsp;
                     <span className="d-none d-xl-inline-block">Profile</span>
-                </a>
-                <a className={isActive(active, 'more')}
-                href="more.html">
+                </Link>
+                <Link className={isActive(active, 'more')}
+                to="more.html">
                     <i className="fas fa-comment-dots"></i>&nbsp;
                     <span className="d-none d-xl-inline-block">More</span>
-                </a>
+                </Link>
             </div>
             <div className = "d-grid mt-2">
                 <a href = "tweet.html"
