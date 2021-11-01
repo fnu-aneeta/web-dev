@@ -15,9 +15,9 @@ const PostSummaryListItem = (post) => {
                                     <h7 class="fw-normal text-color">${post.tweets}</h7>
                                 </div>
                                 <div class="col-2">
-                                    <img class="rounded img-fluid" src=${post.image}
-                                         width="55px"
-                                         height="55px"/>
+                                    <img class="rounded img-fluid mt-3" src=${post.image}
+                                         width="75px"
+                                         height="75px"/>
                                 </div>
 
                         
