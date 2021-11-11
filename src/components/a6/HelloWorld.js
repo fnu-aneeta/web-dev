@@ -10,6 +10,9 @@ const HelloWorld = () => {
             </Link> |
             <Link to="/a6/build">
                 Build
+            </Link> |
+            <Link to="/a6/twitter/home">
+                Challenge
             </Link>
         </>
     )
