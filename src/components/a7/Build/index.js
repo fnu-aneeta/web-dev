@@ -9,6 +9,7 @@ import {Route} from "react-router-dom";
 import ExploreScreen from "./ExploreScreen/ExploreScreen";
 import HomeScreen from "./HomeScreen/HomeScreen";
 import ProfileScreen from "./ProfileScreen/ProfileScreen";
+import EditProfileScreen from "./EditProfileScreen/EditProfileScreen";
 //import HomeScreen from "./HomeScreen/HomeScreen";
 import who from "../../../reducers/who";
 import {createStore} from "redux";
@@ -42,8 +43,8 @@ const Build = () => {
                    exact={true} component={ExploreScreen}/>
             <Route path="/a7/twitter/profile"
                    exact={true} component={ProfileScreen}/>
-            {/*<Route path="/a7/twitter/editprofile"*/}
-            {/*       exact={true} component={EditProfileItem}/>*/}
+            <Route path="/a7/twitter/editProfile"
+                   exact={true} component={EditProfileScreen}/>
 
 
 
