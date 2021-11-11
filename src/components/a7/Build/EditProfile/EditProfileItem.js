@@ -1,16 +1,32 @@
 import React, {useState} from "react";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import profile from "../../../../reducers/profile";
 import {Link} from "react-router-dom";
 
-const EditProfileItem = () => {
-    const profile = useSelector(state => state.profile.profile)
+const EditProfileItem = ({profile}) => {
+    // const profile = useSelector(state => state.profile.profile)
 
     const [localProfile, setLocalProfile] = useState(profile);
-    const updateProfile = (event) => {
-        setLocalProfile({
-                ...profile,
-            username: event.target.value})
+    const updateProfile = (update, type) => {
+        if (type==="uname"){
+            setLocalProfile(prevState => ( {...prevState, username: update}));
+        }
+        else if(type === "bio"){
+            setLocalProfile(prevState => ( {...prevState, bio: update}));
+        }
+
+        else if(type === "location"){
+            setLocalProfile(prevState => ( {...prevState, location: update}));
+        }
+
+        else if(type === "website"){
+            setLocalProfile(prevState => ( {...prevState, website: update}));
+        }
+
+        else if(type === "birth"){
+            setLocalProfile(prevState => ( {...prevState, dateOfBirth: update}));
+        }
+
     }
     const dispatch = useDispatch();
     const save = () => {
@@ -80,7 +96,7 @@ const EditProfileItem = () => {
                 <form>
                     <div className="form-group">
                         <label htmlFor="formGroupExampleInput">Name</label>
-                        <input onChange={updateProfile}
+                        <input onChange={(event) => updateProfile(event.target.value, "uname")}
                                type="text" className="form-control" id="name"
                                value={localProfile.username}
                                style={{width: "100%", color: "white",
@@ -91,7 +107,7 @@ const EditProfileItem = () => {
                     </div>
                     <div className="form-group">
                         <label htmlFor="formGroupExampleInput">Bio</label>
-                        <input onChange={updateProfile}
+                        <input onChange={(event) => updateProfile(event.target.value, "bio")}
                                type="text" className="form-control" id="bio"
                                value={localProfile.bio}
                                style={{width: "100%", color: "white",
@@ -104,7 +120,7 @@ const EditProfileItem = () => {
                     </div>
                     <div className="form-group">
                         <label htmlFor="formGroupExampleInput">Location</label>
-                        <input onChange={updateProfile}
+                        <input onChange={(event) => updateProfile(event.target.value, "location")}
                                type="text" className="form-control" id="location"
                                value={localProfile.location}
                                style={{width: "100%", color: "white",
@@ -116,7 +132,7 @@ const EditProfileItem = () => {
 
                     <div className="form-group">
                         <label htmlFor="formGroupExampleInput">Website</label>
-                        <input onChange={updateProfile}
+                        <input onChange={(event) => updateProfile(event.target.value, "website")}
                                type="text" className="form-control" id="website"
                                value={localProfile.website}
                                style={{width: "100%", color: "white",
@@ -128,7 +144,7 @@ const EditProfileItem = () => {
 
                     <div className="form-group mb-2">
                         <label htmlFor="formGroupExampleInput">Date of Birth</label>
-                        <input onChange={updateProfile}
+                        <input onChange={(event) => updateProfile(event.target.value, "dateOfBirth")}
                                type="date" className="form-control" id="birth"
                                value={localProfile.dateOfBirth}
                                style={{width: "100%", color: "white",
