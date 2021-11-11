@@ -21,9 +21,9 @@ const ProfileScreen = () => {
                     <NavigationSidebar active="profile"/>
                 </div>
                 <div className="col-6 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6">
-                    {/*<ProfileComponent/>*/}
-                    <EditProfileItem/>
-                    <ProfileItem/>
+                    <ProfileComponent/>
+                    {/*<EditProfileItem/>*/}
+                    {/*<ProfileItem/>*/}
                     <HomeComponent/>
 
                 </div>
