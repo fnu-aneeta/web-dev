@@ -18,8 +18,10 @@ const Practice = () => {
             {/*<Link to = "/a7/build">*/}
             {/*    Build*/}
             {/*</Link>*/}
-            <Link to="/a7/twitter/explore">Build</Link> |
-            <Link to="/a7/twitter/home">Challenge</Link>
+            {/*<Link to="/a7/twitter/explore">Build</Link> |*/}
+            {/*<Link to="/a7/twitter/home">Challenge</Link>*/}
+            <Link to="/a7/twitter/home">Build</Link> |
+            <Link to="/a7/twitter/profile">Challenge</Link>
             <ReduxExamples/>
             <TodoList/>
             <TodoItem/>
