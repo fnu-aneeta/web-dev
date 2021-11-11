@@ -8,9 +8,9 @@ const profile = (state = initialState, action) => {
     // return(state);
     switch(action.type) {
         case 'update-profile':
-            return {
+            return ({
                 profile: action.profile
-            };
+            })
         break
         case 'discard-update':
             return (state);
