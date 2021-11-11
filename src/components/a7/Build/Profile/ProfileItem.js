@@ -2,8 +2,10 @@ import React from "react";
 import './profile.css';
 import {Link} from "react-router-dom";
 import EditProfileItem from "../EditProfile/EditProfileItem";
+import {useSelector} from "react-redux";
 
 const ProfileItem = (
+
     {
         profile =
             {
@@ -12,12 +14,13 @@ const ProfileItem = (
                 bannerPicture: 'https://miro.medium.com/max/750/1*3T7J7csXY8u36acofw5N8g.jpeg',
                 bio: 'Software Engineer',
                 website: 'youtube.com/webdevtv',
-                location: 'Boston, MA',	dateOfBirth: '1968-7-7',	dateJoined: '2009/4',
+                location: 'Boston, MA',	dateOfBirth: '1968-09-09',	dateJoined: '2009/4',
                 followingCount: '312',	followersCount: '180'
 
             }
     }
 ) => {
+    // const profile = useSelector(state => state.profile.profile)
     return(
         <div>
             <div>
