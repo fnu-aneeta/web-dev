@@ -10,11 +10,9 @@ const ProfileList = () => {
     return(
         <ul className="list-group">
             {
-                profile.map(profile => {
-                    return(
+
                         <ProfileItem profile={profile}/>
-                    );
-                })
+
             }
         </ul>
     );
