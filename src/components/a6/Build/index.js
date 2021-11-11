@@ -5,6 +5,7 @@ import React from "react";
 // import PostSummaryList from "./PostSummaryList/PostSummaryList";
 import {Link} from "react-router-dom";
 import ExploreScreen from "./ExploreScreen/ExploreScreen";
+import HomeScreen from "./HomeScreen/HomeScreen";
 //import HomeScreen from "./HomeScreen/HomeScreen";
 
 const Build = () => {
@@ -16,8 +17,12 @@ const Build = () => {
             </Link> |
             <Link to = "/a6/practice">
                 Practice
+            </Link> |
+            <Link to="/a6/twitter/home">
+                Challenge
             </Link>
             <ExploreScreen/>
+            <HomeScreen/>
 
         {/*    <PostSummaryList/>*/}
         {/*<PostSummaryItem/>*/}
