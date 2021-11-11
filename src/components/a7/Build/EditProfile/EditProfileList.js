@@ -5,7 +5,7 @@ const selectAllProfile = (state) => state.profile.profile;
 
 const ProfileList = () => {
     const profile = useSelector(selectAllProfile);
-console.log(profile);
+// console.log(profile);
     return(
         <ul className="list-group">
             {
