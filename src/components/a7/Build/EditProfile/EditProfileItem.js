@@ -144,7 +144,7 @@ const EditProfileItem = ({profile}) => {
 
                     <div className="form-group mb-2">
                         <label htmlFor="formGroupExampleInput">Date of Birth</label>
-                        <input onChange={(event) => updateProfile(event.target.value, "dateOfBirth")}
+                        <input onChange={(event) => updateProfile(event.target.value, "birth")}
                                type="date" className="form-control" id="birth"
                                value={localProfile.dateOfBirth}
                                style={{width: "100%", color: "white",
