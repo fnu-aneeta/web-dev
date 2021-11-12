@@ -30,9 +30,16 @@ body {
     border-radius: 15px;
 
 }
+.wd-card-border{
+    border-radius: 25px;
+    border: 1px solid #282828;
+}
+.wd-card-body-border{
+    background-color: black;
+    border-top: 1px solid dimgray;
+}
 
 .wd-border-top {
-
     border-top: 1px solid #282828;
     border-bottom: 1px solid #282828 ;
 }
@@ -42,13 +49,15 @@ body {
     float: end;
 }
 
-.wd-card-image-border{
-border-radius: 15px 15px 15px 15px;
-}
 
-.wd-card-image-grimmy{
-    border-radius: 15px;
-    border: 1px solid #282828 ;
+
+.wd-card-border-top-radius{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.wd-card-border-bottom-radius{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .wd-card-image-Inspiration4x{

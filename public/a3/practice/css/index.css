@@ -87,6 +87,7 @@ p#id-selector-2 {
 .dimension-portrait {
     width: 75px;
     height: 100px;
+    padding-left: 20px;
 }
 
 .dimension-landscape {

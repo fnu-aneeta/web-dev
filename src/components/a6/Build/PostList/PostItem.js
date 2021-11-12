@@ -42,10 +42,13 @@ const PostItem = (
                    </p>
 
 
+                <div className="card wd-card-border img-fluid wd-color-card-body">
+        {/*<div className = "card border-left border-right wd-card-rounded-border wd-color-card-body wd-border-top">*/}
+            {/*<img src = {posts.linkImage}*/}
+            {/*     className={`card-img-top  wd-card-image-border ${posts.linkImage} ? '' : 'wd-card-image-grimmy'}`}/>*/}
 
-        <div className = "card border-left border-right wd-card-rounded-border wd-color-card-body wd-border-top">
-            <img src = {posts.linkImage}
-                 className="card-img-top wd-card-image-border wd-card-image-grimmy"/>
+            <img src={posts.linkImage}
+                 className={`img-fluid wd-card-border-top-radius ${posts.linkTitle ? '' : 'wd-card-border-bottom-radius'}`}/>
 
             <div className = {`card-body ${posts.linkBody ? '' : 'd-none'}`}>
                 <div className = "card-title">
