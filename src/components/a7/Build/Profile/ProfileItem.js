@@ -73,7 +73,7 @@ const ProfileItem = (
                 <br/>
             <div>
                 <i className="fas fa-map-marker-alt wd-icon-distant">{' '}{profile.location}</i>
-                <i className="fas fa-stopwatch wd-icon-distant">{' '}Born{' '}{profile.dateOfBirth}</i>
+                <i className="fas fa-stopwatch wd-icon-distant">{' '}Born{' '}{profile.dateOfBirth}{' '}</i>
                 <i className="fas fa-calendar wd-icon-distant">{' '}Joined{' '}{profile.dateJoined}</i>
             </div>
 
