@@ -11,11 +11,11 @@ import HomeScreen from "./HomeScreen/HomeScreen";
 import ProfileScreen from "./ProfileScreen/ProfileScreen";
 import EditProfileScreen from "./EditProfileScreen/EditProfileScreen";
 //import HomeScreen from "./HomeScreen/HomeScreen";
-import who from "../../../reducers/who";
-import {createStore} from "redux";
-import {Provider} from "react-redux";
-import tweets from "../../../reducers/tweets";
-import EditProfileItem from "./EditProfile/EditProfileItem";
+// import who from "../../../reducers/who";
+// import {createStore} from "redux";
+// import {Provider} from "react-redux";
+// import tweets from "../../../reducers/tweets";
+// import EditProfileItem from "./EditProfile/EditProfileItem";
 //import WhoToFollowListItem from "./WhoToFollowList/WhoToFollowListItem";
 
 // const store = createStore(who);
