@@ -15,6 +15,27 @@
     border: 1px solid;
 }
 
+.wd-camera-icon{
+    position: relative;
+    right: 50px;
+    color: darkgray;
+    top: 7px;
+}
+
+.wd-camera-icon-banner{
+    position: relative;
+    left: 250px;
+    color: darkgray;
+    bottom: 120px;
+}
+
+.wd-cross-icon-banner{
+    position: relative;
+    left: 160px;
+    color: darkgray;
+    bottom: 120px;
+
+}
 /**{*/
 /*    margin:0px;*/
 /*    padding:0px;*/
