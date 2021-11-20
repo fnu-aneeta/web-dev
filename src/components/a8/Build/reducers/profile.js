@@ -7,6 +7,12 @@ const initialState = {
 const profile = (state = initialState, action) => {
     // return(state);
     switch(action.type) {
+        case 'get-current-profile':
+            return({
+                profile: action.profile
+            })
+            break;
+
         case 'update-profile':
             return ({
                 profile: action.profile

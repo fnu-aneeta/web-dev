@@ -6,6 +6,11 @@ const initialState = {
 
 const tweets = (state = initialState, action) => {
     switch (action.type) {
+        case 'fetch-all-tweets':
+            return({
+                tweets: action.tweets
+            })
+            break;
         case 'like-tweet':
             return ({
                 tweets: state.tweets.map(tweet => {
@@ -33,7 +38,14 @@ const tweets = (state = initialState, action) => {
 
             break;
         case 'create-tweet':
-            const tweet = {
+            if (action.tweet.tweet !== undefined){
+                return {
+                    "tweets": [
+                        action.tweet, ...state.tweets
+                    ]
+                }
+            }
+            const tweets = {
                 _id: (new Date()).getTime() + '',
                 "topic": "Web Development",
                 "userName": "ReactJS",
@@ -67,7 +79,7 @@ const tweets = (state = initialState, action) => {
                     return (
                         {
                             "tweets": [
-                                tweet, ...state.tweets
+                                tweets, ...state.tweets
                             ]
                         }
                     );
