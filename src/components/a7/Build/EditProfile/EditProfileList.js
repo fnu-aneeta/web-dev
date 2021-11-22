@@ -9,10 +9,7 @@ const ProfileList = () => {
     return(
         <ul className="list-group">
             {
-
-                        <EditProfileItem profile={profile}/>
-
-
+                <EditProfileItem profile={profile}/>
             }
         </ul>
     );

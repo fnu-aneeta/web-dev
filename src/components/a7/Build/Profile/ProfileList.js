@@ -10,9 +10,7 @@ const ProfileList = () => {
     return(
         <ul className="list-group">
             {
-
-                        <ProfileItem profile={profile}/>
-
+                <ProfileItem profile={profile}/>
             }
         </ul>
     );

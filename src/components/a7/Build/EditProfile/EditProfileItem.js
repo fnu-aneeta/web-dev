@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import profile from "../../../../reducers/profile";
+// import profile from "../../../../reducers/profile";
 import {Link} from "react-router-dom";
 
 const EditProfileItem = ({profile}) => {
