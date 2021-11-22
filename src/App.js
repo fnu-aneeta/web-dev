@@ -12,12 +12,17 @@ import {BrowserRouter, Link, Route} from "react-router-dom";
 // import WhoToFollowList from "./components/a7/Build/WhoToFollowList/WhoToFollowList";
 import {combineReducers,createStore} from "redux";
 import {Provider} from "react-redux";
-import who from "./reducers/who";
-import tweets from "./reducers/tweets";
-import profile from "./reducers/profile";
-import post from "./reducers/post";
+// import who from "./reducers/who";
+// import tweets from "./reducers/tweets";
+// import profile from "./reducers/profile";
+// import post from "./reducers/post";
+import who from "./components/a8/Build/reducers/who";
+import tweets from "./components/a8/Build/reducers/tweets";
+import profile from "./components/a8/Build/reducers/profile";
+import post from "./components/a8/Build/reducers/post";
 import A6 from "./components/a6";
 import A7 from "./components/a7";
+import A8 from "./components/a8";
 //
 // const store = createStore(who);
 const reducer = combineReducers({tweets: tweets, who, profile, post})
@@ -30,13 +35,19 @@ function App() {
 
          <div className="container">
              <Link to="/a6/practice">A6</Link> |
-             <Link to="/a7/practice">A7</Link>
+             <Link to="/a7/practice">A7</Link> |
+             <Link to="/a8/practice">A8</Link> |
+
              <Route path="/a6">
                  <A6/>
              </Route>
 
              <Route path="/a7">
                  <A7/>
+             </Route>
+
+             <Route path="/a8">
+                 <A8/>
              </Route>
 
           {/*<Route path="/a7/hello" exact={true}>*/}
