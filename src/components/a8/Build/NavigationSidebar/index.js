@@ -15,7 +15,7 @@ const NavigationSidebar = (
         <div>
             {/*{JSON.stringify(profile)}*/}
             <div className="list-group">
-                <Link className="list-group-item" to="/a7/practice">
+                <Link className="list-group-item" to="/a8/practice">
 
                     <i className="fab fa-twitter"></i>
                 </Link>
