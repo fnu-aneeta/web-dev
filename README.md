@@ -1,5 +1,8 @@
 Netlify link: https://elastic-bartik-450c92.netlify.app/
 
+Heroku link: https://node-on-server.herokuapp.com/api/tweets
+             https://node-on-server.herokuapp.com/api/profile
+             https://node-on-server.herokuapp.com/hello
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
